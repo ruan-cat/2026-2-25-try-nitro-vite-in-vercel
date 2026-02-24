@@ -5,7 +5,7 @@
   "scripts": {
     "up-taze": "pnpm -w up @ruan-cat/taze-config -L && npx taze -r",
     "build": "pnpm -F=apps build",
-    "postbuild": "tsx scripts/move-output.ts"
+    "postbuild": "tsx scripts/move-output.ts && shx ls -a"
   },
   "devDependencies": {
     "@ruan-cat/commitlint-config": "^4.9.1",
@@ -15,6 +15,7 @@
     "consola": "^3.4.2",
     "cross-env": "^10.1.0",
     "cz-git": "^1.12.0",
+    "shx": "^0.4.0",
     "taze": "^19.9.2",
     "tsx": "^4.21.0"
   },
