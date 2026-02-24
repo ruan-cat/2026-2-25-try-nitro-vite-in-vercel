@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:nitro": "cross-env NITRO_PRESET=vercel nitro build",
+    "dev": "vite dev",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "nitro": "latest",
+    "tailwindcss": "^4.1.18",
+    "vite": "beta"
+  },
+  "packageManager": "pnpm@10.29.3"
+}

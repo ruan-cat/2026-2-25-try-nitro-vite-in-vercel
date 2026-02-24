@@ -1,23 +1,21 @@
 {
-  "type": "module",
+  "name": "2026-2-25-try-nitro-vite-in-vercel",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "up-taze": "pnpm up @ruan-cat/taze-config -L && npx taze -r",
-    "build": "vite build",
-    "build:nitro": "cross-env NITRO_PRESET=vercel nitro build",
-    "dev": "vite dev",
-    "preview": "vite preview"
+    "up-taze": "pnpm -w up @ruan-cat/taze-config -L && npx taze -r",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@ruan-cat/commitlint-config": "^4.9.1",
     "@ruan-cat/taze-config": "^1.0.2",
-    "@tailwindcss/vite": "^4.1.18",
+    "taze": "^19.9.2",
     "commitizen": "^4.3.1",
     "cross-env": "^10.1.0",
-    "cz-git": "^1.12.0",
-    "nitro": "latest",
-    "tailwindcss": "^4.1.18",
-    "taze": "^19.9.2",
-    "vite": "beta"
+    "cz-git": "^1.12.0"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "packageManager": "pnpm@10.29.3"
 }

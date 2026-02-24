@@ -14,9 +14,6 @@ importers:
       '@ruan-cat/taze-config':
         specifier: ^1.0.2
         version: 1.0.2(taze@19.9.2)(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3))
-      '@tailwindcss/vite':
-        specifier: ^4.1.18
-        version: 4.2.1(vite@8.0.0-beta.15(@types/node@25.3.0)(jiti@2.6.1)(yaml@2.8.2))
       commitizen:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@25.3.0)(typescript@5.9.3)
@@ -26,15 +23,21 @@ importers:
       cz-git:
         specifier: ^1.12.0
         version: 1.12.0
+      taze:
+        specifier: ^19.9.2
+        version: 19.9.2
+
+  apps:
+    devDependencies:
+      '@tailwindcss/vite':
+        specifier: ^4.1.18
+        version: 4.2.1(vite@8.0.0-beta.15(@types/node@25.3.0)(jiti@2.6.1)(yaml@2.8.2))
       nitro:
         specifier: latest
         version: 3.0.1-alpha.2(chokidar@5.0.0)(rolldown@1.0.0-rc.5)(vite@8.0.0-beta.15(@types/node@25.3.0)(jiti@2.6.1)(yaml@2.8.2))
       tailwindcss:
         specifier: ^4.1.18
         version: 4.2.1
-      taze:
-        specifier: ^19.9.2
-        version: 19.9.2
       vite:
         specifier: beta
         version: 8.0.0-beta.15(@types/node@25.3.0)(jiti@2.6.1)(yaml@2.8.2)
