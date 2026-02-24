@@ -11,6 +11,9 @@ importers:
       '@ruan-cat/commitlint-config':
         specifier: ^4.9.1
         version: 4.9.1(commitizen@4.3.1(@types/node@25.3.0)(typescript@5.9.3))(cz-git@1.12.0)(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3))
+      '@ruan-cat/taze-config':
+        specifier: ^1.0.2
+        version: 1.0.2(taze@19.9.2)(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3))
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.2.1(vite@8.0.0-beta.15(@types/node@25.3.0)(jiti@2.6.1)(yaml@2.8.2))
@@ -26,11 +29,19 @@ importers:
       tailwindcss:
         specifier: ^4.1.18
         version: 4.2.1
+      taze:
+        specifier: ^19.9.2
+        version: 19.9.2
       vite:
         specifier: beta
         version: 8.0.0-beta.15(@types/node@25.3.0)(jiti@2.6.1)(yaml@2.8.2)
 
 packages:
+
+  '@antfu/ni@27.0.1':
+    resolution: {integrity: sha512-I6SOlwJ0MN73ECYcr7VJHpqSseyd7bpshx6JAaD0zNowS4kSWzFsqg8ikQT7DnCLiD4AZ+FaQJQ8WAk0Qi89Vw==}
+    engines: {node: '>=20'}
+    hasBin: true
 
   '@babel/code-frame@7.29.0':
     resolution: {integrity: sha512-9NhCeYjq9+3uxgdtp20LSiJXJvN0FeCtNGpJxuMFZ1Kv3cWUNb6DOhJwUvcVCzKGR66cw4njwM6hrJLqgOwbcw==}
@@ -362,6 +373,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@quansync/fs@1.0.0':
+    resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
+
   '@rolldown/binding-android-arm64@1.0.0-rc.5':
     resolution: {integrity: sha512-zCEmUrt1bggwgBgeKLxNj217J1OrChrp3jJt24VK9jAharSTeVaHODNL+LpcQVhRz+FktYWfT9cjo5oZ99ZLpg==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -452,6 +466,15 @@ packages:
     peerDependencies:
       commitizen: '>=4'
       cz-git: '>=1'
+
+  '@ruan-cat/taze-config@1.0.2':
+    resolution: {integrity: sha512-DFVDoOYf1GG7+K5w9BxrcbXn+JI4S1qSj4F2cCSfAZIhNCZpFt/ognqkvA7Z6V4kCUFfmxWeyOC5PlgyfMBJMA==}
+    hasBin: true
+    peerDependencies:
+      taze: '>=19'
+    peerDependenciesMeta:
+      taze:
+        optional: true
 
   '@ruan-cat/utils@4.20.0':
     resolution: {integrity: sha512-FhU411EmqeQIqY7esdnXOZLz7QK/Hj4TqGZF5ddwyuJ9rRNaSZPOP99EBb3HMsdG3sTOjeFyAHs4oVn1zdfifQ==}
@@ -676,6 +699,10 @@ packages:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
     engines: {node: '>=8'}
 
+  ansis@4.2.0:
+    resolution: {integrity: sha512-HqZ5rWlFjGiV0tDm3UxxgNRqsOTniqoKZu0pIAfh7TZQMGuZK+hH0drySty0si0QXj1ieop4+SkSfPZBPPkHig==}
+    engines: {node: '>=14'}
+
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
@@ -727,6 +754,10 @@ packages:
     peerDependenciesMeta:
       magicast:
         optional: true
+
+  cac@6.7.14:
+    resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}
+    engines: {node: '>=8'}
 
   cachedir@2.3.0:
     resolution: {integrity: sha512-A+Fezp4zxnit6FanDmv9EqXNAi3vt9DWp51/71UEhXukb7QUuvtv9344h91dyAxuTLoSYJFU299qzR3tzwPAhw==}
@@ -1016,6 +1047,10 @@ packages:
   find-root@1.1.0:
     resolution: {integrity: sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==}
 
+  find-up-simple@1.0.1:
+    resolution: {integrity: sha512-afd4O7zpqHeRyg4PfDQsXmlDe2PfdHtJt6Akt8jOWaApLOZk5JXs6VMR29lz03pRe9mpykrRCYIYxaJYcfpncQ==}
+    engines: {node: '>=18'}
+
   findup-sync@4.0.0:
     resolution: {integrity: sha512-6jvvn/12IC4quLBL1KNokxC7wWTvYncaVUYSoxWw7YykPLuRrnv4qdHcSOywOI5RpkOVGeQRtWM8/q+G6W6qfQ==}
     engines: {node: '>= 8'}
@@ -1047,6 +1082,9 @@ packages:
 
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+
+  fzf@0.5.2:
+    resolution: {integrity: sha512-Tt4kuxLXFKHy8KT40zwsUPUkg1CrsgY25FxA2U/j/0WgEDCk3ddc/zLTCCcbSHX9FcKtLuVaDGtGE/STWC+j3Q==}
 
   get-intrinsic@1.3.0:
     resolution: {integrity: sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==}
@@ -1354,6 +1392,10 @@ packages:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
     engines: {node: '>=6'}
 
+  mimic-function@5.0.1:
+    resolution: {integrity: sha512-VP79XUPxV2CigYP3jWwAUFSku2aKqBH7uTAapFWCBqutsbmDo96KY5o8uh6U+/YSIn5OxJnXp73beVkpqMIGhA==}
+    engines: {node: '>=18'}
+
   minimatch@10.2.2:
     resolution: {integrity: sha512-+G4CpNBxa5MprY+04MbgOw1v7So6n5JY166pFi9KfYwT78fxScCeSNQSNzp6dpPSW2rONOps6Ocam1wFhCgoVw==}
     engines: {node: 18 || 20 || >=22}
@@ -1422,6 +1464,10 @@ packages:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
     engines: {node: '>=6'}
 
+  onetime@7.0.0:
+    resolution: {integrity: sha512-VXJjc87FScF88uafS3JllDgvAm+c/Slfz06lorj2uAY34rlUu0Nt+v8wreiImcrgAjjIHp1rXpTDlLOGw29WwQ==}
+    engines: {node: '>=18'}
+
   open@10.2.0:
     resolution: {integrity: sha512-YgBpdJHPyQ2UE5x+hlSXcnejzAvD0b22U2OuAP+8OnlJT+PjWPxtgmGqKKc+RgTM63U9gN0YzrYc71R2WT/hTA==}
     engines: {node: '>=18'}
@@ -1441,6 +1487,9 @@ packages:
   oxc-transform@0.110.0:
     resolution: {integrity: sha512-/fymQNzzUoKZweH0nC5yvbI2eR0yWYusT9TEKDYVgOgYrf9Qmdez9lUFyvxKR9ycx+PTHi/reIOzqf3wkShQsw==}
     engines: {node: ^20.19.0 || >=22.12.0}
+
+  package-manager-detector@1.6.0:
+    resolution: {integrity: sha512-61A5ThoTiDG/C8s8UMZwSorAGwMJ0ERVGj2OjoW5pAalsNOg15+iQiPzrLJ4jhZ1HJzmC2PIHT2oEiH3R5fzNA==}
 
   parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
@@ -1488,6 +1537,9 @@ packages:
   proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
+  quansync@1.0.0:
+    resolution: {integrity: sha512-5xZacEEufv3HSTPQuchrvV6soaiACMFnq1H8wkVioctoH3TRha9Sz66lOxRwPK/qZj7HPiSveih9yAyh98gvqA==}
+
   rc9@2.1.2:
     resolution: {integrity: sha512-btXCnMmRIBINM2LDZoEmOogIZU7Qe7zn4BpomSKZ/ykbLObuBdvG+mFq11DL6fjH1DRwHhrlgtYWG96bJiC7Cg==}
 
@@ -1518,6 +1570,10 @@ packages:
   restore-cursor@3.1.0:
     resolution: {integrity: sha512-l+sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC+4EH2anSGaEMXSD0izRQbu9nfyQ9y5JrVmp7E8oZrUjvA==}
     engines: {node: '>=8'}
+
+  restore-cursor@5.1.0:
+    resolution: {integrity: sha512-oMA2dcrw6u0YfxJQXm342bFKX/E4sG9rbTzO9ptUcR/e8A33cHuvStiYOwH7fszkZlZ1z/ta9AAoPk2F4qIOHA==}
+    engines: {node: '>=18'}
 
   rolldown@1.0.0-rc.5:
     resolution: {integrity: sha512-0AdalTs6hNTioaCYIkAa7+xsmHBfU5hCNclZnM/lp7lGGDuUOb6N4BVNtwiomybbencDjq/waKjTImqiGCs5sw==}
@@ -1554,6 +1610,10 @@ packages:
 
   signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
+
+  signal-exit@4.1.0:
+    resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
+    engines: {node: '>=14'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -1606,6 +1666,10 @@ packages:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
     engines: {node: '>=6'}
 
+  taze@19.9.2:
+    resolution: {integrity: sha512-If8bq7lSckIMPfXV+C9jjEfdsQnRryh/foKfpX/ah6zI0TrQfUGWSGCaaD32Bqy5/KGRmLZie3EwMSr3Au21XQ==}
+    hasBin: true
+
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
 
@@ -1639,6 +1703,12 @@ packages:
 
   ufo@1.6.3:
     resolution: {integrity: sha512-yDJTmhydvl5lJzBmy/hyOAA0d+aqCBuwl818haVdYCRrWV84o7YyeVm4QlVHStqNrrJSTb6jKuFAVqAFsr+K3Q==}
+
+  unconfig-core@7.5.0:
+    resolution: {integrity: sha512-Su3FauozOGP44ZmKdHy2oE6LPjk51M/TRRjHv2HNCWiDvfvCoxC2lno6jevMA91MYAdCdwP05QnWdWpSbncX/w==}
+
+  unconfig@7.5.0:
+    resolution: {integrity: sha512-oi8Qy2JV4D3UQ0PsopR28CzdQ3S/5A1zwsUwp/rosSbfhJ5z7b90bIyTwi/F7hCLD4SGcZVjDzd4XoUQcEanvA==}
 
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
@@ -1810,6 +1880,14 @@ packages:
     hasBin: true
 
 snapshots:
+
+  '@antfu/ni@27.0.1':
+    dependencies:
+      ansis: 4.2.0
+      fzf: 0.5.2
+      package-manager-detector: 1.6.0
+      tinyexec: 1.0.2
+      tinyglobby: 0.2.15
 
   '@babel/code-frame@7.29.0':
     dependencies:
@@ -2042,6 +2120,10 @@ snapshots:
   '@oxc-transform/binding-win32-x64-msvc@0.110.0':
     optional: true
 
+  '@quansync/fs@1.0.0':
+    dependencies:
+      quansync: 1.0.0
+
   '@rolldown/binding-android-arm64@1.0.0-rc.5':
     optional: true
 
@@ -2107,6 +2189,32 @@ snapshots:
       - idb-keyval
       - jwt-decode
       - magicast
+      - nprogress
+      - qrcode
+      - sortablejs
+      - typescript
+      - universal-cookie
+      - unplugin-vue-router
+      - vite-plugin-autogeneration-import-file
+      - vue
+
+  '@ruan-cat/taze-config@1.0.2(taze@19.9.2)(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3))':
+    dependencies:
+      '@ruan-cat/utils': 4.20.0(js-yaml@4.1.1)(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3))
+      commander: 13.1.0
+      consola: 3.4.2
+    optionalDependencies:
+      taze: 19.9.2
+    transitivePeerDependencies:
+      - async-validator
+      - change-case
+      - debug
+      - drauu
+      - focus-trap
+      - fuse.js
+      - idb-keyval
+      - js-yaml
+      - jwt-decode
       - nprogress
       - qrcode
       - sortablejs
@@ -2319,6 +2427,8 @@ snapshots:
     dependencies:
       color-convert: 2.0.1
 
+  ansis@4.2.0: {}
+
   argparse@2.0.1: {}
 
   asynckit@0.4.0: {}
@@ -2381,6 +2491,8 @@ snapshots:
       perfect-debounce: 2.1.0
       pkg-types: 2.3.0
       rc9: 2.1.2
+
+  cac@6.7.14: {}
 
   cachedir@2.3.0: {}
 
@@ -2646,6 +2758,8 @@ snapshots:
 
   find-root@1.1.0: {}
 
+  find-up-simple@1.0.1: {}
+
   findup-sync@4.0.0:
     dependencies:
       detect-file: 1.0.0
@@ -2676,6 +2790,8 @@ snapshots:
     optional: true
 
   function-bind@1.1.2: {}
+
+  fzf@0.5.2: {}
 
   get-intrinsic@1.3.0:
     dependencies:
@@ -2957,6 +3073,8 @@ snapshots:
 
   mimic-fn@2.1.0: {}
 
+  mimic-function@5.0.1: {}
+
   minimatch@10.2.2:
     dependencies:
       brace-expansion: 5.0.3
@@ -3049,6 +3167,10 @@ snapshots:
     dependencies:
       mimic-fn: 2.1.0
 
+  onetime@7.0.0:
+    dependencies:
+      mimic-function: 5.0.1
+
   open@10.2.0:
     dependencies:
       default-browser: 5.5.0
@@ -3116,6 +3238,8 @@ snapshots:
       '@oxc-transform/binding-win32-ia32-msvc': 0.110.0
       '@oxc-transform/binding-win32-x64-msvc': 0.110.0
 
+  package-manager-detector@1.6.0: {}
+
   parent-module@1.0.1:
     dependencies:
       callsites: 3.1.0
@@ -3161,6 +3285,8 @@ snapshots:
 
   proxy-from-env@1.1.0: {}
 
+  quansync@1.0.0: {}
+
   rc9@2.1.2:
     dependencies:
       defu: 6.1.4
@@ -3192,6 +3318,11 @@ snapshots:
     dependencies:
       onetime: 5.1.2
       signal-exit: 3.0.7
+
+  restore-cursor@5.1.0:
+    dependencies:
+      onetime: 7.0.0
+      signal-exit: 4.1.0
 
   rolldown@1.0.0-rc.5:
     dependencies:
@@ -3232,6 +3363,8 @@ snapshots:
 
   signal-exit@3.0.7: {}
 
+  signal-exit@4.1.0: {}
+
   source-map-js@1.2.1: {}
 
   srvx@0.10.1: {}
@@ -3270,6 +3403,21 @@ snapshots:
 
   tapable@2.3.0: {}
 
+  taze@19.9.2:
+    dependencies:
+      '@antfu/ni': 27.0.1
+      cac: 6.7.14
+      find-up-simple: 1.0.1
+      ofetch: 1.5.1
+      package-manager-detector: 1.6.0
+      pathe: 2.0.3
+      pnpm-workspace-yaml: 1.5.0
+      restore-cursor: 5.1.0
+      tinyexec: 1.0.2
+      tinyglobby: 0.2.15
+      unconfig: 7.5.0
+      yaml: 2.8.2
+
   through@2.3.8: {}
 
   tinyexec@1.0.2: {}
@@ -3295,6 +3443,19 @@ snapshots:
     optional: true
 
   ufo@1.6.3: {}
+
+  unconfig-core@7.5.0:
+    dependencies:
+      '@quansync/fs': 1.0.0
+      quansync: 1.0.0
+
+  unconfig@7.5.0:
+    dependencies:
+      '@quansync/fs': 1.0.0
+      defu: 6.1.4
+      jiti: 2.6.1
+      quansync: 1.0.0
+      unconfig-core: 7.5.0
 
   undici-types@7.18.2:
     optional: true
