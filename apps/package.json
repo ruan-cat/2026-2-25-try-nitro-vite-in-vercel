@@ -2,7 +2,7 @@
   "name": "apps",
   "type": "module",
   "scripts": {
-    "build": "pnpm build:vite",
+    "build": "pnpm build:vite:vercel",
     "build:vite": "vite build",
     "build:vite:vercel": "cross-env NITRO_PRESET=vercel vite build",
     "build:nitro": "nitro build",
