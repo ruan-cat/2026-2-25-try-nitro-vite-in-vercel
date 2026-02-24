@@ -6,6 +6,7 @@ pnpm-debug.log*
 dist/
 .output/
 .nitro/
+.vercel/
 
 # Cache
 .cache/
