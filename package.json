@@ -3,6 +3,7 @@
   "scripts": {
     "up-taze": "pnpm up @ruan-cat/taze-config -L && npx taze -r",
     "build": "vite build",
+    "build:nitro": "cross-env NITRO_PRESET=vercel nitro build",
     "dev": "vite dev",
     "preview": "vite preview"
   },
@@ -11,6 +12,7 @@
     "@ruan-cat/taze-config": "^1.0.2",
     "@tailwindcss/vite": "^4.1.18",
     "commitizen": "^4.3.1",
+    "cross-env": "^10.1.0",
     "cz-git": "^1.12.0",
     "nitro": "latest",
     "tailwindcss": "^4.1.18",
