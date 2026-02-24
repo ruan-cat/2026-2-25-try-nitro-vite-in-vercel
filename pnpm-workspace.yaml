@@ -1,3 +1,6 @@
 packages:
   - apps
-  - "!.vercel/**"
+  - '!.vercel/**'
+
+onlyBuiltDependencies:
+  - esbuild
