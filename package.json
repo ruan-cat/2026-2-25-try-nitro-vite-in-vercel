@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "nitro": "latest",
+    "tailwindcss": "^4.1.18",
+    "vite": "beta"
+  },
+  "packageManager": "pnpm@10.29.3"
+}
