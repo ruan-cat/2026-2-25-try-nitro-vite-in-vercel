@@ -4,7 +4,7 @@
   "scripts": {
     "build": "pnpm build:vite",
     "build:vite": "vite build",
-    "build:vite:vercel": "cross-env NITRO_PRESET=vercel vite build ",
+    "build:vite:vercel": "cross-env NITRO_PRESET=vercel vite build",
     "build:nitro": "nitro build",
     "build:nitro:vercel": "cross-env NITRO_PRESET=vercel nitro build",
     "dev": "vite dev",
