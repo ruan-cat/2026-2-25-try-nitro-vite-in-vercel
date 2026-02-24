@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "up-taze": "pnpm -w up @ruan-cat/taze-config -L && npx taze -r",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -F=apps build"
   },
   "devDependencies": {
     "@ruan-cat/commitlint-config": "^4.9.1",
