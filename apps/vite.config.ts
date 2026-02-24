@@ -7,7 +7,6 @@ export default defineConfig({
   plugins: [
     nitro({
       serverDir: "./",
-      preset: "vercel",
     }),
     tailwindcss(),
   ],
