@@ -5,7 +5,11 @@
   "scripts": {
     "up-taze": "pnpm -w up @ruan-cat/taze-config -L && npx taze -r",
     "build": "pnpm -F=apps build",
-    "postbuild": "tsx scripts/move-output.ts && shx ls -a"
+    "postbuild": "pnpm run rm && pnpm run mk && pnpm run cp",
+    "rm": "shx rm -rf .vercel/output",
+    "mk": "shx mkdir -p .vercel/output",
+    "cp": "shx cp -r apps/.vercel/output .vercel",
+    "1-postbuild": "tsx scripts/move-output.ts && shx ls -a"
   },
   "devDependencies": {
     "@ruan-cat/commitlint-config": "^4.9.1",
