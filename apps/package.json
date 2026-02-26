@@ -16,6 +16,7 @@
     "drizzle-orm": "^0.45.1"
   },
   "devDependencies": {
+    "@ruan-cat/vite-plugin-ts-alias": "^0.2.0",
     "@tailwindcss/vite": "^4.1.18",
     "drizzle-kit": "^0.31.9",
     "nitro": "3.0.1-alpha.2",
