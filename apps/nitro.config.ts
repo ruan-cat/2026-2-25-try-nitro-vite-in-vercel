@@ -9,7 +9,7 @@ export default defineConfig({
     // https://v3.nitro.build/deploy/providers/cloudflare
     cloudflare: "2024-09-19",
     // https://nitro.build/deploy/providers/vercel#observability
-    vercel: "2025-07-15",
+    vercel: "2024-09-19",
   },
 
   serverDir: "./server",
