@@ -5,7 +5,7 @@
 
 import { defineHandler, HTTPError } from "nitro/h3";
 import type { H3Event } from "nitro/h3";
-import type { ApiResponse } from "../types";
+import type { ApiResponse } from "server/types";
 
 interface HandlerOptions {
 	/** 成功时的消息（可选） */

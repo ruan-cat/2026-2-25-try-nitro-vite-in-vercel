@@ -5,9 +5,8 @@
  */
 
 import { readBody } from "nitro/h3";
-import { defineApiHandler, badRequest } from "../utils/api";
-import { db, usersTable } from "../db";
-import type { InsertUser } from "../db";
+import { defineApiHandler, badRequest } from "server/utils/api";
+import { db, usersTable, type InsertUser } from "server/db";
 
 export default defineApiHandler(
 	async (event) => {
